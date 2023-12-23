@@ -56,7 +56,7 @@ void GOTStateMachine::execute() {
   changedState = false;
   unsigned long loopTime = millis();
   
-  if ((loopTime - lastStateProcessedTime) > executeTime) {   // Time to process states
+  if ((loopTime - lastStateProcessedTime) >= executeTime) {   // Time to process states
 
     if (!alreadyProcessed) {
 
